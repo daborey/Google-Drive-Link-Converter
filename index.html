@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Drive Link Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Google Drive Link Converter</h1>
+    <p>Convert your Google Drive share link to a direct image URL.</p>
+  </header>
+
+  <section id="converter">
+    <div class="input-container">
+      <label for="googleDriveLink">Enter Google Drive Share Link:</label>
+      <input type="text" id="googleDriveLink" placeholder="https://drive.google.com/file/d/FILE_ID/view?usp=sharing">
+    </div>
+    <button onclick="convertLink()">Convert Link</button>
+
+    <div id="output" class="output">
+      <h3>Converted Link:</h3>
+      <p id="convertedLink"></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
